@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_updateairport_listairport"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_updt_masb"
+        android:id="@+id/ed_updateairport_masanbay"
+        android:hint="Mã sân bay"
+        android:enabled="false"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sân bay"
+        android:id="@+id/tv_updt_masb"
+        android:layout_below="@id/spin_updateairport_listairport"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tỉnh/Thành phố"
+        android:id="@+id/tv_updt_tinhsb"
+        android:layout_below="@id/ed_updateairport_masanbay"/>
+
+    <TextView
+        android:id="@+id/tv_updt_tensb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spin_updateairport_listairport"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/ed_updateairport_masanbay"
+        android:text="Tên sân bay" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nước"
+        android:id="@+id/tv_updt_nuocsb"
+        android:layout_toRightOf="@id/ed_updateairport_tinh"
+        android:layout_below="@id/ed_updateairport_tensanbay"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ed_updateairport_masanbay"
+        android:layout_below="@id/tv_updt_tensb"
+        android:id="@+id/ed_updateairport_tensanbay"
+        android:hint="Tên sân bay"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_updt_tinhsb"
+        android:id="@+id/ed_updateairport_tinh"
+        android:hint="Tên Tỉnh"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ed_updateairport_masanbay"
+        android:layout_below="@id/tv_updt_nuocsb"
+        android:id="@+id/ed_updateairport_nuoc"
+        android:hint="Tên Nước"/>
+</RelativeLayout>

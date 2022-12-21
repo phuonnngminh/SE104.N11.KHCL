@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên hạng vé"
+        android:textSize="20dp"
+        android:textColor="#0A2359"
+        android:id="@+id/txt_tenhangve"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:id="@+id/txt_quantity"
+        android:textSize="20dp"
+        android:textColorHint="#0A2359"
+        android:inputType="number"
+        android:layout_below="@id/txt_tenhangve"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_quantity"
+        android:text="Xóa"
+        android:backgroundTint="#0A2359"
+        android:textSize="13dp"
+        android:id="@+id/btn_delete_hangve"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_delete_hangve"
+        android:layout_below="@id/txt_quantity"
+        android:text="Chỉnh sửa"
+        android:backgroundTint="#0A2359"
+        android:textSize="13dp"
+        android:id="@+id/btn_update_hangve"/>
+</RelativeLayout>

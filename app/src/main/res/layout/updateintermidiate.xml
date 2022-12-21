@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_newintermidiate"
+        android:hint="Sân bay mới"
+        android:inputType="number" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_new_intermidiate"
+        android:layout_below="@id/txt_newintermidiate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_new_note"
+        android:hint="Ghi chú"
+        android:layout_below="@id/spin_new_intermidiate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_new_waittime"
+        android:hint="Thời gian chờ"
+        android:inputType="number"
+        android:layout_below="@id/ed_new_note"/>
+</RelativeLayout>

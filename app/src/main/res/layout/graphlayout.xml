@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#fff">
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_graph_month"
+        android:hint="Tháng"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_graph_year"
+        android:layout_toRightOf="@id/ed_graph_month"
+        android:hint="Năm"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ed_graph_year"
+        android:id="@+id/btn_start_plot"
+        android:backgroundTint="#0A2359"
+        android:text="Xuất"/>
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ed_graph_month"
+        android:id="@+id/graph"/>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tạo tài khoản admin"
+        android:background="#0A2359"
+        android:id="@+id/btn_sel_admin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tạo tài khoản khách"
+        android:background="#0A2359"
+        android:id="@+id/btn_sel_guest"
+        android:layout_below="@id/btn_sel_admin"/>
+</RelativeLayout>

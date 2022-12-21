@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tên người đặt:"
+        android:textColor="#0A2359"
+        android:id="@+id/tv_book_namehelp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại người đặt:"
+        android:id="@+id/tv_book_sdthelp"
+        android:textColor="#0A2359"
+        android:layout_below="@id/tv_book_namehelp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Hành khách:"
+        android:id="@+id/tv_book_name"
+        android:textColor="#0A2359"
+        android:layout_below="@id/tv_book_sdthelp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Số CMND:"
+        android:id="@+id/tv_book_id"
+        android:textColor="#0A2359"
+        android:layout_below="@id/tv_book_name"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại:"
+        android:id="@+id/tv_book_phone"
+        android:textColor="#0A2359"
+        android:layout_below="@id/tv_book_id"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tình trạng thanh toán: "
+        android:id="@+id/tv_book_paysta"
+        android:textColor="#0A2359"
+        android:layout_below="@id/tv_book_levelticket"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Ngày thanh toán: "
+        android:id="@+id/tv_book_paydate"
+        android:textColor="#0A2359"
+        android:layout_below="@id/tv_book_paysta" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Hạng vé: "
+        android:textColor="#0A2359"
+        android:id="@+id/tv_book_levelticket"
+        android:layout_below="@id/tv_book_phone"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_book_id"
+        android:text="Thanh toán"
+        android:backgroundTint="#0A2359"
+        android:id="@+id/btn_bookinfo_pay"/>
+</RelativeLayout>

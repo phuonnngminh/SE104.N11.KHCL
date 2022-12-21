@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn tuyến bay"
+        android:id="@+id/txt_updtuyenbay_sel"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_updtb_listtb"
+        android:layout_below="@+id/txt_updtuyenbay_sel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_updtb_matb"
+        android:text="Mã tuyến bay"
+        android:layout_below="@id/spin_updtb_listtb"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_upd_sanbaydi"
+        android:text="Sân bay đi"
+        android:layout_below="@id/txt_updtb_matb"/>
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_upd_sbdi"
+        android:layout_below="@id/txt_upd_sanbaydi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_upd_sanbayden"
+        android:text="Sân bay đến"
+        android:layout_below="@id/spin_upd_sbdi"/>
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_upd_sbden"
+        android:layout_below="@id/txt_upd_sanbayden"/>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_intermidiate_name"
+        android:textSize="20dp"
+        android:textColor="#0A2359"
+        android:text="Sân bay trung gian: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú:"
+        android:textSize="20dp"
+        android:textColor="#0A2359"
+        android:layout_below="@id/txt_intermidiate_name"
+        android:id="@+id/txt_note_intermidiate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian chờ:"
+        android:textSize="20dp"
+        android:textColor="#0A2359"
+        android:layout_below="@id/txt_note_intermidiate"
+        android:id="@+id/txt_waittime"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_waittime"
+        android:text="Xóa"
+        android:textSize="13dp"
+        android:backgroundTint="#0A2359"
+        android:id="@+id/btn_delete_intermidiate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_delete_intermidiate"
+        android:layout_below="@id/txt_waittime"
+        android:backgroundTint="#0A2359"
+        android:text="Chỉnh sửa"
+        android:textSize="13dp"
+        android:id="@+id/btn_update_intermidiate"/>
+
+</RelativeLayout>

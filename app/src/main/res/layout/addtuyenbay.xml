@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã tuyến bay"
+        android:id="@+id/ed_matuyenbay"
+        android:enabled="false"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sân bay đi"
+        android:id="@+id/txt_title_sanbaydi"
+        android:layout_below="@+id/ed_matuyenbay"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_addtuyenbay_di"
+        android:layout_below="@id/txt_title_sanbaydi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sân bay đến"
+        android:id="@+id/txt_title_sanbayden"
+        android:layout_below="@+id/spin_addtuyenbay_di"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_addtuyenbay_den"
+        android:layout_below="@id/txt_title_sanbayden"/>
+</RelativeLayout>

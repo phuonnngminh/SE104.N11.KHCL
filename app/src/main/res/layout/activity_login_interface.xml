@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".LoginInterface">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Nhập thông tin đăng nhập"
+        android:id="@+id/txt_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#0A2359"
+        android:layout_marginTop="200dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_Username"
+        android:textColorHint="#0A2359"
+        android:hint="Username"
+        android:layout_below="@id/txt_login"
+        android:layout_centerInParent="true"
+        android:textColor="#0A2359"
+        android:width="250dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_Password"
+        android:hint="Password"
+        android:textColorHint="#0A2359"
+        android:layout_below="@id/ed_Username"
+        android:layout_centerInParent="true"
+        android:width="250dp"
+        android:textColor="#0A2359"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:id="@+id/btn_login"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/ed_Password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác thực sinh trắc học"
+        android:id="@+id/btn_finger"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/txt_forgot"
+        android:layout_marginLeft="100dp"
+        android:text="Quên mật khẩu? "
+        android:textSize="15dp"
+        android:layout_below="@id/btn_finger"
+        android:textColor="#0A2359"
+        android:clickable="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/txt_create"
+        android:text="| Tạo tài khoản mới "
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/txt_forgot"
+        android:layout_below="@id/btn_finger"
+        android:textColor="#0A2359"
+        android:clickable="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_quit"
+        android:backgroundTint="#0A2359"
+        android:text="Thoát"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_quit"
+        android:layout_alignParentBottom="true"
+        android:text="Version 1.0: AirTicket"
+        android:layout_marginBottom="15dp"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

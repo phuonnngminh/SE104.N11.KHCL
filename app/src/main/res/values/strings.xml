@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VeMayBay</string>
+    <string name="tab_text_1">Thêm chuyến bay</string>
+    <string name="tab_text_2">Bán vé</string>
+    <string name="tab_text_3">Đặt vé</string>
+    <string name="tab_text_4">Danh sách chuyến bay</string>
+    <string name="tab_text_5">Thống kê</string>
+    <string name="tab_text_6">Thay đổi quy định</string>
+    <string name="tab_text_7">Quản lý thông tin vé</string>
+</resources>

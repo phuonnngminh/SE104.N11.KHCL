@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_mng_sel_flight"
+        android:id="@+id/spin_bookmng_listflight"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_bookmng_listflight"
+        android:layout_marginTop="15dp"
+        android:text="Tên"
+        android:textColor="#0A2359"
+        android:id="@+id/txt_mgn_sel_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_bookmng_listflight"
+        android:layout_marginTop="15dp"
+        android:text="CMND"
+        android:textColor="#0A2359"
+        android:layout_toRightOf="@id/ed_mgn_sel_name"
+        android:id="@+id/txt_mgn_sel_id"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại"
+        android:textColor="#0A2359"
+        android:layout_toRightOf="@id/spin_bookmng_listflight"
+        android:id="@+id/txt_mgn_sel_sdt"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_mgn_sel_sdt"
+        android:textColorHint="#0A2359"
+        android:hint="SDT tìm kiếm"
+        android:layout_toRightOf="@id/spin_bookmng_listflight"
+        android:layout_below="@id/txt_mng_sel_flight"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_mgn_sel_name"
+        android:textColorHint="#0A2359"
+        android:hint="Tên tìm kiếm"
+        android:layout_below="@id/txt_mgn_sel_name"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_mgn_sel_id"
+        android:textColorHint="#0A2359"
+        android:hint="CMND tìm kiếm"
+        android:layout_toRightOf="@id/ed_mgn_sel_name"
+        android:layout_below="@id/txt_mgn_sel_name"/>
+
+    <TextView
+        android:id="@+id/txt_mng_sel_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn chuyến bay"
+        android:textColor="#0A2359" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_mgn_sel_name"
+        android:id="@+id/recycler_listbook"/>
+</RelativeLayout>

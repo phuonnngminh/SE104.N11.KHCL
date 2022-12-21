@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_code_flight"
+        android:textColor="#fff"
+        android:text="Mã chuyến bay:"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_from_flight"
+        android:textColor="#fff"
+        android:text="Sân bay đi:"
+        android:layout_below="@id/txt_code_flight"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_arrive_flight"
+        android:textColor="#fff"
+        android:text="Sân bay đến:"
+        android:layout_below="@id/txt_from_flight"/>
+
+    <TextView
+        android:id="@+id/txt_cost_flight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/txt_code_flight"
+        android:text="Giá vé:"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_time_flight"
+        android:text="Bắt đầu:"
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/txt_from_flight"
+        android:layout_below="@id/txt_cost_flight"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_flytime_flight"
+        android:text="Thời gian bay:"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/txt_arrive_flight"
+        android:layout_below="@id/txt_time_flight"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="xem thêm về hạng vé"
+        android:layout_below="@id/txt_arrive_flight"
+        android:textSize="10dp"
+        android:backgroundTint="#0A2359"
+        android:id="@+id/btn_moreinfo_hangve"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="xem thêm về các sân bay trung gian"
+        android:textSize="10dp"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/txt_arrive_flight"
+        android:id="@+id/btn_moreinfo_inter"
+        android:layout_toRightOf="@id/btn_moreinfo_hangve"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Đặt ngay"
+        android:textSize="10dp"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/txt_arrive_flight"
+        android:id="@+id/btn_moreinfo_booknow"
+        android:layout_toRightOf="@id/btn_moreinfo_inter"/>
+</RelativeLayout>

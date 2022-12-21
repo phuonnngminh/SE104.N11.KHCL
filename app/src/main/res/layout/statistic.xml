@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thống kê"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="#0A2359"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/statistic_txt_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_txt_select"
+        android:textColor="#0A2359"
+        android:text="Chọn kiểu trích xuất"
+        android:layout_below="@+id/statistic_txt_title"/>
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_spin_select"
+        android:textColor="#0A2359"
+        android:popupBackground="#0A2359"
+        android:layout_below="@id/statistic_txt_select"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_txt_tip"
+        android:text="Nhập 2 số cuối của năm"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_toRightOf="@id/statistic_spin_select"
+        android:layout_below="@+id/statistic_txt_title"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Tháng"
+        android:id="@+id/statistic_ed_month"
+        android:textColor="#0A2359"
+        android:layout_below="@id/statistic_spin_select"
+        android:textColorHint="#0A2359"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Năm"
+        android:id="@+id/statistic_ed_month_year"
+        android:textColor="#0A2359"
+        android:layout_below="@id/statistic_spin_select"
+        android:layout_toRightOf="@id/statistic_ed_month"
+        android:textColorHint="#0A2359"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_btn_month_ok"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/statistic_spin_select"
+        android:layout_toRightOf="@id/statistic_ed_month_year"
+        android:text="OK"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_btn_month_graph"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/statistic_spin_select"
+        android:layout_toRightOf="@id/statistic_btn_month_ok"
+        android:text="Xem biểu đồ"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_btn_year_graph"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/statistic_spin_select"
+        android:layout_toRightOf="@id/statistic_btn_year_ok"
+        android:text="Xem biểu đồ"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Năm"
+        android:id="@+id/statistic_ed_year"
+        android:textColor="#000"
+        android:layout_below="@id/statistic_spin_select"
+        android:textColorHint="#0A2359"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_btn_year_ok"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/statistic_spin_select"
+        android:layout_toRightOf="@id/statistic_ed_year"
+        android:text="OK"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_month_stt"
+        android:text="STT"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_month_chuyenbay"
+        android:layout_toRightOf="@id/txt_month_stt"
+        android:text="Chuyến bay"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_year_thang"
+        android:layout_toRightOf="@id/txt_month_stt"
+        android:text="Tháng"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_month_sove"
+        android:layout_marginTop="150dp"
+        android:text="Số vé"
+        android:textColor="#0A2359"
+        android:layout_toRightOf="@id/txt_month_chuyenbay"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_year_sochuyenbay"
+        android:layout_marginTop="150dp"
+        android:text="Số chuyến bay"
+        android:textColor="#0A2359"
+        android:layout_toRightOf="@id/txt_year_thang"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_month_doanhthu"
+        android:text="Doanh thu"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/txt_month_sove"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_year_doanhthu"
+        android:text="Doanh thu"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/txt_year_sochuyenbay"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_month_tile"
+        android:text="Tỉ lệ"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/txt_month_doanhthu"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_year_tile"
+        android:text="Tỉ lệ"
+        android:textColor="#0A2359"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/txt_year_doanhthu"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_month_stt"
+        android:id="@+id/recycler_statistic"
+        />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Nhập thông tin cần tra cứu"
+        android:textColor="#fff"
+        android:background="#0A2359"
+        android:id="@+id/txt_title_listflight"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title_listflight"
+        android:id="@+id/listflight_spin_sbdi"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="->"
+        android:textColor="#0A2359"
+        android:layout_toRightOf="@id/listflight_spin_sbdi"
+        android:id="@+id/listflight_txt_muiten"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_title_listflight"/>
+    <Spinner
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title_listflight"
+        android:id="@+id/listflight_spin_sbden"
+        android:layout_toRightOf="@id/listflight_txt_muiten"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listflight_ed_start"
+        android:layout_below="@id/listflight_spin_sbdi"
+        android:textColorHint="#0A2359"
+        android:hint="Ngày khởi hành"
+        android:layout_marginLeft="50dp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="làm mới"
+        android:backgroundTint="#0A2359"
+        android:layout_below="@id/listflight_spin_sbdi"
+        android:layout_toRightOf="@id/listflight_ed_start"
+        android:id="@+id/listflight_btn_delete"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_listflight"
+        android:layout_below="@id/listflight_ed_start"/>
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefreshbook"
+    android:layout_width="match_parent"
+    android:background="#ccc"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_book"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="#0A2359"
+            android:layout_centerHorizontal="true"
+            android:text="Đặt vé" />
+
+        <TextView
+            android:id="@+id/txt_title_select_flight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_book"
+            android:layout_marginTop="15dp"
+            android:textColor="#0A2359"
+            android:text="Chuyến bay:" />
+
+        <Spinner
+            android:id="@+id/spin_bookticket_select_flight"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_book"
+            android:layout_toRightOf="@id/txt_title_select_flight" />
+
+        <TextView
+            android:id="@+id/txt_name_bookhelp"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:textColor="#0A2359"
+            android:layout_below="@id/spin_bookticket_select_flight"
+            android:layout_marginTop="15dp"
+            android:text="Tên người đặt:" />
+        <EditText
+            android:id="@+id/ed_name_book"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0A2359"
+            android:layout_below="@id/spin_bookticket_select_flight"
+            android:layout_toRightOf="@id/txt_name_bookhelp"
+            android:hint="Tên " />
+        <TextView
+            android:id="@+id/txt_sdt_book"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:textColor="#0A2359"
+            android:layout_below="@id/txt_name_bookhelp"
+            android:layout_marginTop="15dp"
+            android:text="SDT người đặt:" />
+        <EditText
+            android:id="@+id/ed_sdt_book"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0A2359"
+            android:layout_below="@id/txt_name_bookhelp"
+            android:layout_toRightOf="@id/txt_name_bookhelp"
+            android:hint="Số điện thoại: "
+            android:inputType="number"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_isHelp"
+            android:textColor="#0A2359"
+            android:buttonTint="#0A2359"
+            android:layout_below="@id/txt_sdt_book"
+            android:text="Đặt hộ"/>
+        <TextView
+            android:id="@+id/txt_name_guest"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_isHelp"
+            android:textColor="#0A2359"
+            android:layout_marginTop="15dp"
+            android:text="Tên hành khách:" />
+
+        <EditText
+            android:id="@+id/ed_name_guest"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0A2359"
+            android:layout_below="@id/check_isHelp"
+            android:layout_toRightOf="@id/txt_name_guest"
+            android:hint="Tên " />
+
+        <TextView
+            android:id="@+id/txt_id_guest"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_name_guest"
+            android:textColor="#0A2359"
+            android:layout_marginTop="15dp"
+            android:text="Số CMND:" />
+
+        <EditText
+            android:id="@+id/ed_id_guest"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0A2359"
+            android:layout_below="@id/ed_name_guest"
+            android:layout_toRightOf="@id/txt_id_guest"
+            android:hint="Số CMND "
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txt_phone_guest"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_id_guest"
+            android:textColor="#0A2359"
+            android:layout_marginTop="15dp"
+            android:text="Số điện thoại:" />
+
+        <EditText
+            android:id="@+id/ed_phone_guest"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_id_guest"
+            android:layout_toRightOf="@id/txt_phone_guest"
+            android:textColorHint="#0A2359"
+            android:hint="Số điện thoại "
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txt_select_ticketlevel"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_phone_guest"
+            android:layout_marginTop="15dp"
+            android:textColor="#0A2359"
+            android:text="Hạng vé:" />
+
+        <Spinner
+            android:id="@+id/spin_bookticket_selectticketlevel"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_phone_guest"
+            android:layout_toRightOf="@id/txt_select_ticketlevel" />
+
+        <EditText
+            android:id="@+id/ed_money_guest"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0A2359"
+            android:textColor="#0A2359"
+            android:layout_below="@id/ed_phone_guest"
+            android:layout_toRightOf="@id/spin_bookticket_selectticketlevel"
+            android:editable="false"
+            android:hint="Giá tiền: "
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_bookticket"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_money_guest"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0A2359"
+            android:text="Đặt (Thanh toán sau)" />
+
+        <Button
+            android:id="@+id/btn_bookticket_pay"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_bookticket"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0A2359"
+            android:text="Đặt (Thanh toán ngay)" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/spin_bookticket_select_flight"
+            android:background="@drawable/nameicon"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/check_isHelp"
+            android:background="@drawable/nameicon"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ed_name_book"
+            android:background="@drawable/phoneicon"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ed_name_guest"
+            android:background="@drawable/idicon1"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ed_id_guest"
+            android:background="@drawable/phoneicon"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0A2359"
+            android:layout_below="@id/btn_bookticket_pay"
+            android:layout_centerHorizontal="true"
+            android:text="Không thấy chuyến bay đã thêm? Hãy kéo xuống để refresh" />
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
