@@ -13,10 +13,10 @@
         <TextView
             android:id="@+id/title_sell"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="10dp"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-            android:text="Bán vé"
+
             android:textSize="20dp"
             android:background="#0A2359"
             android:textColor="#fff" />
@@ -188,7 +188,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_selltickets"
             android:layout_centerHorizontal="true"
-            android:text="Không thấy chuyến bay đã thêm? Hãy kéo xuống để refresh"
+            android:text=""
             android:textColor="#0A2359" />
 
         <ImageView

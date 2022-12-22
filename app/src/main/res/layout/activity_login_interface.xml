@@ -19,16 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="#0A2359"
         android:layout_marginTop="200dp"/>
+
     <EditText
+        android:id="@+id/ed_Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ed_Username"
-        android:textColorHint="#0A2359"
-        android:hint="Username"
         android:layout_below="@id/txt_login"
         android:layout_centerInParent="true"
+        android:width="250dp"
+        android:hint="Username"
         android:textColor="#0A2359"
-        android:width="250dp"/>
+        android:textColorHint="#0A2359" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,9 +52,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Xác thực sinh trắc học"
+        android:text=""
         android:id="@+id/btn_finger"
-        android:backgroundTint="#0A2359"
+        android:backgroundTint="#fff"
         android:layout_below="@id/btn_login"
         android:layout_centerHorizontal="true"/>
     <TextView

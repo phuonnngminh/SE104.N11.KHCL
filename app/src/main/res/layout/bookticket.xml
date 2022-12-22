@@ -13,13 +13,13 @@
         <TextView
             android:id="@+id/title_book"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="10dp"
             android:textSize="20dp"
             android:textAlignment="center"
             android:textColor="#fff"
             android:background="#0A2359"
             android:layout_centerHorizontal="true"
-            android:text="Đặt vé" />
+             />
 
         <TextView
             android:id="@+id/txt_title_select_flight"
@@ -169,7 +169,7 @@
             android:layout_below="@+id/ed_money_guest"
             android:layout_centerHorizontal="true"
             android:backgroundTint="#0A2359"
-            android:text="Đặt (Thanh toán sau)" />
+            android:text="Thanh toán sau" />
 
         <Button
             android:id="@+id/btn_bookticket_pay"
@@ -178,36 +178,41 @@
             android:layout_below="@+id/btn_bookticket"
             android:layout_centerHorizontal="true"
             android:backgroundTint="#0A2359"
-            android:text="Đặt (Thanh toán ngay)" />
+            android:text="Thanh toán ngay" />
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-5dp"
             android:layout_below="@id/spin_bookticket_select_flight"
-            android:background="@drawable/nameicon"
+            android:background="@drawable/nameicon1"
             android:layout_alignParentRight="true"/>
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-5dp"
             android:layout_below="@id/check_isHelp"
-            android:background="@drawable/nameicon"
+            android:background="@drawable/nameicon1"
             android:layout_alignParentRight="true"/>
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-13dp"
             android:layout_below="@id/ed_name_book"
-            android:background="@drawable/phoneicon"
+            android:background="@drawable/phoneicon1"
             android:layout_alignParentRight="true"/>
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-5dp"
             android:layout_below="@id/ed_name_guest"
             android:background="@drawable/idicon1"
             android:layout_alignParentRight="true"/>
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-5dp"
             android:layout_below="@id/ed_id_guest"
-            android:background="@drawable/phoneicon"
+            android:background="@drawable/phoneicon1"
             android:layout_alignParentRight="true"/>
         <TextView
             android:id="@+id/tv_note"
@@ -216,6 +221,6 @@
             android:textColor="#0A2359"
             android:layout_below="@id/btn_bookticket_pay"
             android:layout_centerHorizontal="true"
-            android:text="Không thấy chuyến bay đã thêm? Hãy kéo xuống để refresh" />
+            android:text="" />
     </RelativeLayout>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

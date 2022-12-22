@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ccc">
+    >
 
     <Spinner
         android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ed_quantity_ticket"
-        android:textColorHint="#0A2359"
+
         android:hint="Số lượng"
         android:inputType="number"
         android:layout_below="@id/spin_add_hangve"/>

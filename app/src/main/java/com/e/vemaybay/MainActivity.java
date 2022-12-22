@@ -153,11 +153,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 StringBuffer buffer = new StringBuffer();
                 buffer.append("Thông tin thành viên \n");
-                buffer.append("Nguyễn Thành Nhân - MSSV: 18521178 \n");
-                buffer.append("Huỳnh Thảo Muội - MSSV: 19521859 \n");
-                buffer.append("Đào Quang Linh - MSSV: 18521141 \n");
-                buffer.append("Hoàng Minh Nghĩa - MSSV: 18521178 \n");
-                buffer.append("Trần Hoàng Thiên Phú - MSSV: 18521250 \n\n");
+                buffer.append("Lê Phương Minh - MSSV: 20521602 \n");
+                buffer.append("Lê Thị Thiệp - MSSV: 20521955 \n");
+                buffer.append("Nguyễn Thị Phương Quyên - MSSV: 20521820 \n");
+                buffer.append("Hồ Nguyễn Gia Huy - MSSV: 20521386\n\n");
                 buffer.append("Thông tin các quy định cơ bản (có thể chỉnh sửa) \n");
                 Cursor c = DB.getRule();
                 String MaxInter = null;

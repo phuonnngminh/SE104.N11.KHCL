@@ -2,12 +2,12 @@
 <RelativeLayout
 xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
 android:layout_height="match_parent"
-    android:background="#fff">
+   >
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/ed_masanbay"
-    android:textColorHint="#0A2359"
+
     android:hint="Mã sân bay"
     android:enabled="false"/>
     <TextView
@@ -15,35 +15,34 @@ android:layout_height="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_addap_name"
         android:text="Tên sân bay"
-        android:textColor="#0A2359"
+
         android:layout_below="@id/ed_masanbay"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_addap_tinh"
-        android:textColor="#0A2359"
+
         android:text="Tỉnh/Thành Phố"
         android:layout_below="@id/ed_tensanbay"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_addap_nuoc"
-        android:textColor="#0A2359"
+
         android:text="Nước"
         android:layout_below="@id/ed_tinh"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ed_tensanbay"
-        android:textColorHint="#0A2359"
+
         android:hint="Tên sân bay"
         android:layout_below="@+id/tv_addap_name"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ed_tinh"
-        android:textColor="#0A2359"
-        android:textColorHint="#0A2359"
+
         android:hint="Tên Tỉnh/Thành phố"
         android:layout_below="@+id/tv_addap_tinh"/>
 
@@ -54,5 +53,5 @@ android:layout_height="match_parent"
         android:layout_below="@+id/tv_addap_nuoc"
         android:layout_marginTop="-2dp"
         android:hint="Tên nước"
-        android:textColorHint="#0A2359" />
+     />
 </RelativeLayout>

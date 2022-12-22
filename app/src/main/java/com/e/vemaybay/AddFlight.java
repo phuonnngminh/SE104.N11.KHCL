@@ -454,7 +454,7 @@ public class AddFlight extends Fragment {
                 int i=0;
                 while (c.moveToNext())
                 {
-                    str_listVe[i] = c.getString(1) + " (Tỉ lệ: " + c.getString(2) +"%)"  ;
+                    str_listVe[i] = c.getString(1) + " (Chiết khấu: " + c.getString(2) +"%)"  ;
                     i++;
                 }
                 c.close();

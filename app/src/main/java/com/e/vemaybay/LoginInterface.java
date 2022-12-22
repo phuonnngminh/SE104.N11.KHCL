@@ -49,10 +49,10 @@ public class LoginInterface extends AppCompatActivity {
             if (create)
             {
                 Toast.makeText(this, "Set default rules for first use", Toast.LENGTH_SHORT).show();
-                DB.AddAirport("SB1", "Tân Sơn Nhất", "Hồ Chí Minh", "Việt Nam");
-                DB.AddAirport("SB2", "Nội Bài", "Hà Nội", "Việt Nam");
+                DB.AddAirport("SB1", "Tan Son Nhat", "Ho Chi Minh", "Viet Nam");
+                DB.AddAirport("SB2", "Noi Bai", "Ha Noi", "Viet Nam");
                 DB.AddTuyenBay("TB1", "SB1", "SB2");
-                DB.AddTicketLevel("HV1", "Phổ Thông", "100");
+                DB.AddTicketLevel("HV1", "Pho Thong", "100");
             }
         }
         executor = ContextCompat.getMainExecutor(this);

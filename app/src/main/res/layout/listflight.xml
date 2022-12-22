@@ -2,13 +2,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccc">
+    >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textSize="20dp"
         android:textAlignment="center"
-        android:text="Nhập thông tin cần tra cứu"
+        android:text="Nhập thông tin chuyến bay cần tra cứu"
         android:textColor="#fff"
         android:background="#0A2359"
         android:id="@+id/txt_title_listflight"
@@ -38,14 +38,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/listflight_ed_start"
         android:layout_below="@id/listflight_spin_sbdi"
-        android:textColorHint="#0A2359"
+        android:textColorHint="#fff"
         android:hint="Ngày khởi hành"
         android:layout_marginLeft="50dp"
         />
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="làm mới"
+        android:text="Tìm"
         android:backgroundTint="#0A2359"
         android:layout_below="@id/listflight_spin_sbdi"
         android:layout_toRightOf="@id/listflight_ed_start"

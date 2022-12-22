@@ -33,6 +33,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.SimpleTimeZone;
 import java.util.concurrent.Executor;
+import java.util.concurrent.TimeUnit;
 
 public class BookTicket extends Fragment {
     EditText nameGuest;
@@ -211,8 +212,7 @@ public class BookTicket extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (!isHelp.isChecked())
-                BookHelp.setText(nameGuest.getText().toString());
-
+                    BookHelp.setText(nameGuest.getText().toString());
             }
 
             @Override
@@ -229,7 +229,7 @@ public class BookTicket extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (!isHelp.isChecked())
-                SdtHelp.setText(phoneGuest.getText().toString());
+                    SdtHelp.setText(phoneGuest.getText().toString());
             }
 
             @Override
@@ -512,14 +512,42 @@ public class BookTicket extends Fragment {
                 }
             }
         });
+
+
+
+
         BookPay.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                if (idGuest.getText().toString().isEmpty() || nameGuest.getText().toString().isEmpty() || phoneGuest.getText().toString().isEmpty() || BookHelp.getText().toString().isEmpty() || SdtHelp.getText().toString().isEmpty()) {
-                    Toast.makeText(getContext(), "Nhập thiếu thông tin", Toast.LENGTH_SHORT).show();
+                Calendar calendar = Calendar.getInstance();
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yy hh:mm");
+                Date now = calendar.getTime();
+                Date create = null;
+                long total = 0;
+                try {
+                    now = simpleDateFormat.parse(simpleDateFormat.format(now.getTime()));
+                } catch (ParseException e) {
+                    e.printStackTrace();
                 }
-                else {
-                    biometricPrompt.authenticate(promptInfo);
+                try {
+                    create = simpleDateFormat.parse(date);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                total = TimeUnit.HOURS.convert(
+                        create.getTime() - now.getTime(),
+                        TimeUnit.MILLISECONDS
+                );
+                final int MAX_HOURS = 24;
+                if ( total <= MAX_HOURS) {
+                    Toast.makeText(getContext(), "Thời gian đặt phải sớm hơn thời gian khởi hành "+String.valueOf(MAX_HOURS)+" giờ.", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (idGuest.getText().toString().isEmpty() || nameGuest.getText().toString().isEmpty() || phoneGuest.getText().toString().isEmpty() || BookHelp.getText().toString().isEmpty() || SdtHelp.getText().toString().isEmpty()) {
+                        Toast.makeText(getContext(), "Nhập thiếu thông tin", Toast.LENGTH_SHORT).show();
+                    } else {
+                        biometricPrompt.authenticate(promptInfo);
+                    }
                 }
             }
         });
