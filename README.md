@@ -4,7 +4,7 @@
 
 <b>Giáo viên hướng dẫn: Đỗ Thị Thanh Tuyền<b>
 
-Nhóm của chúng tôi bao gồm bốn thành viên:
+Nhóm của chúng tôi bao gồm năm thành viên:
 
 |             | Họ và Tên               | MSSV     |
 | ----------- | ----------------        | -------- |
